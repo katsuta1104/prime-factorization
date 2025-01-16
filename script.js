@@ -6,7 +6,7 @@ let exponent = 0;
 let divisors = [];
 for (let number = 2 ; number <= value; number++) {
 if (value % number === 0) {
-exponent = 0:
+exponent = 0;
 while (value % number === 0) {
 exponent++;
 value /= number;
@@ -18,9 +18,11 @@ result.textContent = null;
 divisors. forEach ((divisor, index) =>{
 if (index === divisors. length-1) {
 result.textContent += '${divisor.number}^${divisor.exponent}';
-return
+return;
 }
-result.textContent += '${divisor.number}^${divisor.exponent}\n*\n*
+result.textContent += '${divisor.number}^${divisor.exponent}\n*\n*`
+})
+}
 box. addEventListener('keydown' ,e => {
 if (e. key === 'Enter') {
 checkDivisors();
