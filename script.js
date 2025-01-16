@@ -18,10 +18,10 @@ box. value = null;
 result.textContent = null;
 divisors. forEach ((divisor, index) =>{
 if (index === divisors. length-1) {
-result.textContent += '${divisor.number}^${divisor.exponent}';
+result.textContent += `${divisor.number}^${divisor.exponent}`;
 return;
 }
-result.textContent += '${divisor.number}^${divisor.exponent}\n*\n*`
+result.textContent += `${divisor.number}^${divisor.exponent}\n*\n*`;
 })
 }
 box. addEventListener('keydown' ,e => {
