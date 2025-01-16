@@ -27,5 +27,5 @@ result.textContent += `${divisor.number}^${divisor.exponent}\n*\n*`;
 box. addEventListener('keydown' ,e => {
 if (e. key === 'Enter') {
 checkDivisors();
-}
+  }
 })
