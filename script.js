@@ -1,5 +1,5 @@
 const box = document. querySelector("#prime-factorization");
-const result = document. querySelector "#result");
+const result = document. querySelector ("#result");
 const checkDivisors = () => {
 let value = box.value;
 let exponent = 0;
@@ -12,6 +12,7 @@ exponent++;
 value /= number;
 }
 divisors.push ({number, exponent});
+}
 }
 box. value = null;
 result.textContent = null;
